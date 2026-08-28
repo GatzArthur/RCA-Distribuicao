@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCA Distribuição</title>
+  <meta name="description" content="Empresa de distribuição de produtos alimentícios." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JS/script.js" defer></script>
+
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <nav class="navbar-custom px-6 md:px-12 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between w-full">
+
+      <!-- Logo -->
+      <a href="#" class="font-display font-bold text-xl tracking-tight">
+        RCA<span class="bg-[#1449cdc5] px-1 rounded">Distribuição</span>
+      </a>
+
+      <!-- Links desktop -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#sobre"    class="hover:opacity-60 transition-opacity">Sobre</a></li>
+        <li><a href="#servicos" class="hover:opacity-60 transition-opacity">Serviços</a></li>
+        <li><a href="#clientes" class="hover:opacity-60 transition-opacity">Clientes</a></li>
+        <li><a href="#contato"  class="hover:opacity-60 transition-opacity">Contato</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <a href="https://wa.me/5541995316526" target="_blank" class="hidden md:inline-flex btn btn-sm rounded-full px-6 btn-whatsapp">
+        📲 Faça seu pedido
+      </a>
+
+      <!-- Menu Mobile -->
+      <div class="dropdown dropdown-end md:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-2">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero-section px-6 md:px-12">
+    <div class="hero-grid"></div>
+    <div class="accent-blob"></div>
+
+    <div class="max-w-6xl mx-auto w-full relative z-10">
+      <p class="text-sm font-medium tracking-widest uppercase text-[#6B6B6B] mb-6 anim">
+        ✦ Bem-vindo
+      </p>
+
+      <h1 class="hero-title mb-8 anim anim-delay-1">
+        A melhor escolha <br/>
+        para seu <br/>
+        <span>negócio.</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-[#6B6B6B] max-w-xl mb-10 anim anim-delay-2">
+        Somos especialistas em distribuição de produtos alimentícios. Ajudamos empresas a crescerem com produtos de qualidade.
+      </p>
+
+      <div class="flex flex-wrap gap-4 anim anim-delay-3">
+        <a href="#servicos" class="btn rounded-full bg-[#0A0A0A] text-white border-none hover:bg-[#333] px-8">
+          Conheça nossos serviços
+        </a>
+        <a href="#sobre" class="btn btn-outline rounded-full border-[#0A0A0A] hover:bg-[#0A0A0A] hover:text-white px-8">
+          Saiba mais
+        </a>
+      </div>
+
+      <!-- Números -->
+      <div class="flex flex-wrap gap-12 mt-20 anim anim-delay-4">
+        <div>
+          <p class="font-display text-4xl font-bold">+100</p>
+          <p class="text-sm text-[#6B6B6B] mt-1">Variedades de Produtos</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl font-bold">98%</p>
+          <p class="text-sm text-[#6B6B6B] mt-1">Clientes satisfeitos</p>
+        </div>
+        <div>
+          <p class="font-display text-4xl font-bold">8+</p>
+          <p class="text-sm text-[#6B6B6B] mt-1">Anos de mercado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SOBRE
+  ════════════════════════════════════════ -->
+  <section id="sobre" class="py-26 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Texto -->
+      <div class="anim">
+        <p class="text-xs font-semibold tracking-widest uppercase text-[#6B6B6B] mb-4">Sobre nós</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
+          Uma empresa que coloca o cliente em primeiro lugar.
+        </h2>
+        <p class="text-[#6B6B6B] leading-relaxed mb-6">
+          Fundada em 2018, nossa missão é a Qualidade Que Chega Mais Longe. Acreditamos que bons resultados vêm de uma parceria sólida, comunicação clara e muita dedicação.
+        </p>
+        <p class="text-[#6B6B6B] leading-relaxed">
+          Nossa equipe é formada por profissionais apaixonados pelo que fazem, prontos para atender o seu negócio e entregar produtos que realmente fazem a diferença.
+        </p>
+      </div>
+
+      <!-- Card visual -->
+      <div class="anim anim-delay-2">
+        <div class="bg-[#0A0A0A] rounded-2xl p-8 text-white relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-48 h-48 bg-[#E8FF47] rounded-full translate-x-16 -translate-y-16 opacity-30"></div>
+          <p class="font-display text-6xl font-bold text-[#E8FF47] mb-4">+8</p>
+          <p class="text-xl font-semibold mb-2">Anos de experiência</p>
+          <p class="text-gray-400 text-sm">Distribuindo produtos de qualidade para negócios de todos os tamanhos.</p>
+
+          <div class="mt-8 pt-8 border-t border-gray-800 grid grid-cols-2 gap-4">
+            <div>
+              <p class="font-display text-3xl font-bold">15+</p>
+              <p class="text-sm text-gray-400 mt-1">Cidades atendidas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SERVIÇOS
+  ════════════════════════════════════════ -->
+  <section id="servicos" class="py-24 px-6 md:px-12 bg-white">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16 anim">
+        <p class="text-xs font-semibold tracking-widest uppercase text-[#6B6B6B] mb-4">O que fazemos</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold">Nossos serviços</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="service-card anim">
+          <div class="service-icon">🎯</div>
+          <h3 class="font-display text-xl font-bold mb-3">Distribuição de Produtos Alimentícios</h3>
+          <p class="text-[#6B6B6B] text-sm leading-relaxed">
+            Garantimos a distribuição eficiente de produtos alimentícios, levando qualidade e segurança aos nossos clientes.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card anim anim-delay-1">
+          <div class="service-icon">⚡</div>
+          <h3 class="font-display text-xl font-bold mb-3">Consultoria em Distribuição</h3>
+          <p class="text-[#6B6B6B] text-sm leading-relaxed">
+            Oferecemos orientação especializada para otimizar seus processos de distribuição e alcançar melhores resultados.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card anim anim-delay-2">
+          <div class="service-icon">🚀</div>
+          <h3 class="font-display text-xl font-bold mb-3">Logística de Distribuição</h3>
+          <p class="text-[#6B6B6B] text-sm leading-relaxed">
+            Oferecemos soluções completas de logística para garantir a entrega eficiente e segura dos seus produtos.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card anim anim-delay-1">
+          <div class="service-icon">💡</div>
+          <h3 class="font-display text-xl font-bold mb-3">Planejamento Estratégico</h3>
+          <p class="text-[#6B6B6B] text-sm leading-relaxed">
+            Desenvolvemos estratégias personalizadas para melhorar a organização, eficiência e crescimento das operações.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card anim anim-delay-2">
+          <div class="service-icon">🔧</div>
+          <h3 class="font-display text-xl font-bold mb-3">Gestão e Reposição de Estoque</h3>
+          <p class="text-[#6B6B6B] text-sm leading-relaxed">
+            Auxiliamos no controle e planejamento do estoque, garantindo maior disponibilidade de produtos e evitando desperdícios.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card anim anim-delay-3">
+          <div class="service-icon">📊</div>
+          <h3 class="font-display text-xl font-bold mb-3">Atendimento Personalizado e Suporte ao Cliente</h3>
+          <p class="text-[#6B6B6B] text-sm leading-relaxed">
+            Oferecemos um atendimento personalizado e suporte contínuo aos nossos clientes, garantindo sua satisfação e sucesso.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       DEPOIMENTOS
+  ════════════════════════════════════════ -->
+  <section id="clientes" class="py-24 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="text-center mb-16 anim">
+        <p class="text-xs font-semibold tracking-widest uppercase text-[#6B6B6B] mb-4">Depoimentos</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold">O que dizem<br/>sobre nós</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Depoimento 1 -->
+        <div class="testimonial-card anim">
+          <div class="flex mb-4">
+            <span class="text-[#E8FF47]">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            "A parceria com a empresa trouxe muito mais agilidade para nosso abastecimento. As entregas são pontuais e os produtos chegam sempre em excelentes condições."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center font-bold text-[#E8FF47]">J</div>
+            <div>
+              <p class="font-semibold text-sm">João Silva</p>
+              <p class="text-gray-500 text-xs">CEO, Supermercados Menin</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="testimonial-card anim anim-delay-1">
+          <div class="flex mb-4">
+            <span class="text-[#E8FF47]">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            "O atendimento personalizado faz toda a diferença. Sempre encontramos soluções rápidas para nossas necessidades e contamos com uma equipe muito comprometida."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center font-bold text-[#E8FF47]">M</div>
+            <div>
+              <p class="font-semibold text-sm">Maria Fernanda</p>
+              <p class="text-gray-500 text-xs">Diretora, Supermercados Bavaresco</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="testimonial-card anim anim-delay-2">
+          <div class="flex mb-4">
+            <span class="text-[#E8FF47]">★★★★★</span>
+          </div>
+          <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            "Desde que começamos a trabalhar com a empresa, conseguimos melhorar nossa gestão de estoque e reduzir problemas com falta de produtos. Excelente serviço e profissionalismo."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center font-bold text-[#E8FF47]">C</div>
+            <div>
+              <p class="font-semibold text-sm">Carlos Rocha</p>
+              <p class="text-gray-500 text-xs">Fundador, Distribuidora Olegario</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTATO / CTA
+  ════════════════════════════════════════ -->
+  <section id="contato" class="px-6 md:px-12 pb-24">
+    <div class="cta-section px-8 md:px-16 py-16 anim">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Texto -->
+        <div>
+          <p class="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-4">Contato</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+            Pronto para<br/>começar?
+          </h2>
+          <p class="text-gray-400 leading-relaxed">
+            Entre em contato com a gente. Respondemos em até 24 horas e adoramos conversar sobre novas soluções.
+          </p>
+        </div>
+
+        <!-- Formulário -->
+        <form class="flex flex-col gap-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" placeholder="Seu nome" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
+            <input type="email" placeholder="Seu e-mail" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
+          </div>
+          <input type="text" placeholder="Assunto" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
+          <textarea placeholder="Sua mensagem..." rows="4" class="textarea textarea-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full resize-none" required></textarea>
+          <button type="submit" class="btn rounded-full bg-[#E8FF47] text-[#0A0A0A] border-none hover:bg-yellow-300 font-semibold">
+            Enviar mensagem →
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="border-t border-gray-200 px-6 md:px-12 py-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#6B6B6B]">
+      <p class="font-display font-bold text-[#0A0A0A]">
+        RCA<span class="bg-[#1449cdc5] px-1 rounded">Distribuição</span>
+      </p>
+      <p>©2026. RCADistribuição. Todos os direitos reservados.</p>
+      <div class="flex gap-6">
+        <a href="https://www.instagram.com/gatz_arthur/" class="hover:text-[#0A0A0A] transition-colors">Instagram</a>
+        <a href="https://www.linkedin.com/in/arthur-cordeiro-gatz-05997a1bb" class="hover:text-[#0A0A0A] transition-colors">LinkedIn</a>
+        <a href="https://wa.me/5541995316526" class="hover:text-[#0A0A0A] transition-colors">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

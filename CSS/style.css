@@ -1,0 +1,309 @@
+    /* ── Variáveis ────────────────────────── */
+    :root {
+      --brand:   #0A0A0A;
+      --accent:  #1449cdc5;
+      --surface: #F5F5F0;
+      --muted:   #6B6B6B;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--surface);
+      color: var(--brand);
+    }
+
+    h1, h2, h3, .font-display {
+      font-family: 'Syne', sans-serif;
+    }
+
+    /* ── Navbar ───────────────────────────── */
+    .navbar-custom {
+      background: rgba(245, 245, 240, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(10,10,10,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .btn-whatsapp {
+      background: #000000;
+      color: #fff;
+      border: none;
+    }
+
+
+    /* ── Hero ─────────────────────────────── */
+    .hero-section {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(10,10,10,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10,10,10,0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+
+    .accent-blob {
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      background: var(--accent);
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.35;
+      top: -100px;
+      right: -100px;
+      pointer-events: none;
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-title span {
+      display: inline-block;
+      background: var(--accent);
+      padding: 0 12px;
+      border-radius: 4px;
+    }
+
+    /* ── Serviços ─────────────────────────── */
+    .service-card {
+      background: #fff;
+      border: 1px solid rgba(10,10,10,0.08);
+      border-radius: 16px;
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 60px rgba(10,10,10,0.10);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--accent);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Depoimentos ──────────────────────── */
+    .testimonial-card {
+      background: var(--brand);
+      color: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+    }
+
+    /* ── CTA Final ────────────────────────── */
+    .cta-section {
+      background: var(--brand);
+      color: #000000;
+      border-radius: 24px;
+      margin: 0 1.5rem 4rem;
+    }
+
+    /* ── Animações ────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim { opacity: 0; }
+    .anim.visible {
+      animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .anim-delay-1 { animation-delay: 0.1s; }
+    .anim-delay-2 { animation-delay: 0.2s; }
+    .anim-delay-3 { animation-delay: 0.3s; }
+    .anim-delay-4 { animation-delay: 0.4s; }
+  
+  
+  
+  
+    /* =========================================
+   MODAL DE MENSAGEM
+   ========================================= */
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.75);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 99999;
+
+        animation: overlayEntrada 0.3s ease;
+    }
+
+
+    /* Caixa da mensagem */
+    .mensagem {
+        width: 90%;
+        max-width: 420px;
+
+        background: #0a0a0a;
+
+        border: 1px solid #222;
+        border-radius: 18px;
+
+        padding: 35px 30px;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+        animation: modalEntrada 0.3s ease;
+    }
+
+
+    /* Ícone */
+    .mensagem-icon {
+        width: 55px;
+        height: 55px;
+
+        flex-shrink: 0;
+
+        border-radius: 50%;
+
+        background: #eaff00;
+        color: #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+
+    /* Conteúdo */
+    .mensagem-content {
+        flex: 1;
+    }
+
+
+    .mensagem-content h3 {
+        margin: 0 0 6px;
+
+        color: #ffffff;
+
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .mensagem-content p {
+        margin: 0;
+
+        color: #bdbdbd;
+
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* Modal de sucesso */
+    .mensagem.Sucesso {
+        border-color: rgba(234, 255, 0, 0.35);
+    }
+
+
+    /* Animação de entrada do fundo */
+    @keyframes overlayEntrada {
+
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+    }
+
+
+    /* Animação de entrada da modal */
+    @keyframes modalEntrada {
+
+        from {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+    }
+
+
+    /* Animação de saída */
+    .modal-overlay.fechando {
+        animation: overlaySaida 0.3s ease forwards;
+    }
+
+
+    .modal-overlay.fechando .mensagem {
+        animation: modalSaida 0.3s ease forwards;
+    }
+
+
+    @keyframes overlaySaida {
+
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+
+    }
+
+
+    @keyframes modalSaida {
+
+        from {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+        }
+
+    }
