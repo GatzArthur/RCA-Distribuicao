@@ -29,14 +29,31 @@ window.addEventListener('scroll', () => {
 
 
 // Formulário
-document.querySelector('form').addEventListener('submit', (e) => {
+document.querySelector('form').addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    MensagemEnviada('Mensagem enviada com sucesso, iremos entrar em contato com você em breve.', 'Sucesso');
+    const form = e.target;
+    const dados = new FormData(form);
 
-    e.target.reset();
+    try {
+        const resposta = await fetch(form.action, {
+            method: 'POST',
+            body: dados,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (resposta.ok) {
+            MensagemEnviada('Mensagem enviada com sucesso, iremos entrar em contato com você em breve.', 'Sucesso');
+            form.reset();
+        } else {
+            MensagemEnviada('Não foi possível enviar sua mensagem. Tente novamente mais tarde.', 'erro');
+        }
+    } catch (erro) {
+        MensagemEnviada('Erro de conexão. Verifique sua internet e tente novamente.', 'erro');
+    }
 });
-
 
 function MensagemEnviada(mensagem, tipo = 'info') {
 
