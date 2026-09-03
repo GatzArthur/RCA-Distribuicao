@@ -316,13 +316,16 @@
         </div>
 
         <!-- Formulário -->
-        <form class="flex flex-col gap-4">
+        <form action="https://formspree.io/f/meaqklzg" method="POST" class="flex flex-col gap-4">
           <div class="grid grid-cols-2 gap-4">
-            <input type="text" placeholder="Seu nome" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
-            <input type="email" placeholder="Seu e-mail" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
+            <input type="text" name="nome" placeholder="Seu nome" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
+            <input type="email" name="email" placeholder="Seu e-mail" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
           </div>
-          <input type="text" placeholder="Assunto" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
-          <textarea placeholder="Sua mensagem..." rows="4" class="textarea textarea-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full resize-none" required></textarea>
+          <input type="text" name="assunto" placeholder="Assunto" class="input input-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full" required/>
+          <textarea name="mensagem" placeholder="Sua mensagem..." rows="4" class="textarea textarea-bordered bg-gray-900 border-gray-700 text-white placeholder-gray-500 rounded-xl w-full resize-none" required></textarea>
+          
+          <input type="hidden" name="_subject" value="Novo Contato em RCA Distribuição" />
+
           <button type="submit" class="btn rounded-full bg-[#E8FF47] text-[#0A0A0A] border-none hover:bg-yellow-300 font-semibold">
             Enviar mensagem →
           </button>
